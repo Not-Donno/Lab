@@ -1,0 +1,14 @@
+interface User {
+    name: string;
+    id: number;
+}
+
+const myUser: User = {
+    name: "Nishant",
+    id: 1
+};
+
+function greet(person: User): string {
+    return `Hello, ${person.name}! Your ID is ${person.id}.`;
+}
+console.log(greet(myUser));
